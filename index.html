@@ -1,184 +1,156 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<title>STEM Spirit</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-third img{margin-bottom: -2px; opacity: 0.8; cursor: pointer}
-.w3-third img:hover{opacity: 1}
-.w3-animate-left{from{left:-600px;opacity:0} to{left:-300px;opacity:1}}   
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
 </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-  </head>
-<body class="w3-light-grey w3-content"; style="max-width:2000px">
-  
+<body>
+
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:1;width:300px; float: left; font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b><img src="LogoNew.png" style="width:50%" alt="STEMspirit SuperLab Shirt"></b></h3>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">CLOTHING</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT THE FOUNDERS</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64" align=center><b><img src="LogoNew.png" style="width:50%" alt="STEMspirit SuperLab Shirt"></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Clothing</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About the Founders</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">STEM Spirit</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main">
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Push down content on small screens --> 
-  <div class="w3-hide-large" "w3-center" style="margin-top:83px" "margin-left:300px"></div>
-
-  <!-- Photo grid -->
-  
- <table style="margin-left:750px">
-   <tbody>
-  <tr>
-    <td></td>
-    <td class="w3-center"><font size="+2">Clothing</font></td>
-   </tr>
-  
-   <tr>
-   
-     <div class="w3-row""w3-center">
-     <td> <a href="https://www.customink.com/fundraising/super-lab-class-of-2018-shirts"><img src="stemsuperlab.jpg" style="width:50%" onclick="onClick(this)" alt="SuperLab Shirt"></a></td>
-   </div>
-    
-       <div class="w3-row" "w3-center">
-       <td><a href="https://www.customink.com/fundraising/stemspirit"><img src="stemspirit.jpg" style="width:50%" onclick="onClick(this)" alt="STEM Spirit Hoodie"> </a></td>
-   </div>
-          
-       <div class="w3-row" "w3-center">
-        <td><img src="GOTZELDA.png" style="width:25%" onclick="onClick(this)" alt="Zelda Meets Game of Thrones"></td>
-   </div>
-     
-  </tr>
-   </tbody>
-  </table>
- 
-   
-   
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32"style="margin-left:300px">
-    <div class="w3-bar">
-      <!--<a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>-->
-      <!--a href="#" class="w3-bar-item w3-black w3-button">1</a>-->
-  <!--<a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>-->
-    <!-- <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>-->
-      <!--<a href="#" class="w3-bar-item wa3-button w3-hover-black">4</a>-->
-      <!--<a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>-->
-    </div>
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xlarge" align="center" ><b>"Helping the Future with the Knowledge of Today"</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Clothing.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
   
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image">
       <p id="caption"></p>
     </div>
   </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Us.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
   
- 
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Founders.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+       <!--<p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>-->
 
-  <!-- About section -->
-  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" style="margin-left:300px" id="about">
-    <h4 class="w3-center"><b>About The Organization</b></h4>
-    <div class="w3-center" style="left-margin:600px">
-      <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-      <table style="text-align:center">
-            <tr class="w3-center"><td><p> The Founders of STEM Spirit</p></td></tr>
-        <tr class="w3-center">
-   
-          <td class="w3-center"> <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="bhavik-patel-234390142"><a class="LI-simple-link" href='https://www.linkedin.com/in/bhavik-patel-234390142?trk=profile-badge'>Bhavik Patel</a></div></td>
-          <td class="w3-center"> <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="saumya-r-1387b7122"><a class="LI-simple-link" href='https://www.linkedin.com/in/saumya-r-1387b7122?trk=profile-badge'>Saumya Rawat</a></div></td>
-          <td class="w3-center"> <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="dylanchorley"><a class="LI-simple-link" href='https://www.linkedin.com/in/dylanchorley?trk=profile-badge'>Dylan C.</a></div></td>   
-        
-        
-        </tr>
-      </table>
-          <hr class="w3-center">
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+	  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
      
-     
+        <div class="w3-container">
+           <td class="w3-center" > <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="bhavik-patel-234390142"><a class="LI-simple-link" href='https://www.linkedin.com/in/bhavik-patel-234390142?trk=profile-badge'>Bhavik Patel</a></div></td>
         </div>
-        
-       
       </div>
-   
-
-
-  <!-- Contact section -->
-  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" "w3-center" style="left-margin:300px"  id="contact">
-    <div class="w3-content" style="max-width:600px">
-      <h4 class="w3-center" style="margin-left:350px"><b><a href="https://goo.gl/forms/3NyvoG8UkjpECLvq2" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a></b></h4>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
       
-      
-      <!-- <form action="/action_page.php" target="_blank">
-        <div classc="w3-section">
-          <label>Name</label>
-          <input class="w3-input w3-border" type="text" name="Name" required>
+        <div class="w3-container">
+          <td class="w3-center"> <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="saumya-r-1387b7122"><a class="LI-simple-link" href='https://www.linkedin.com/in/saumya-r-1387b7122?trk=profile-badge'>Saumya Rawat</a></div></td>
         </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+       
+        <div class="w3-container">
+          <td class="w3-center"> <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="dylanchorley"><a class="LI-simple-link" href='https://www.linkedin.com/in/dylanchorley?trk=profile-badge'>Dylan C.</a></div></td>
         </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
-        </div         285>
-        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
-      </form>
--->
-      
-      
+      </div>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-grey"  style="margin-left:300px">  
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <h3>Thank You</h3>
-        <p> We appreciate your support for visiting our page!</p>      
-      </div>
-    
-      <div class="w3-third">
-        <h3>Recent News</h3>
-        <ul class="w3-ul">
-          <li class="w3-padding-16 w3-hover-black">
-            <!--<img src="/w3images/workshop.jpg" class="w3-w3-margin-right" style="width:50px">-->
-            <span class="w3-large"><a href="https://www.customink.com/fundraising/stemspirit">STEM Spirit Apparel Now For SALE!</a></span><br>
-          </li> 
-        </ul>
-      </div>
 
-      <div class="w3-third">
-        <h3>Social Media</h3>
-        <p>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a href="https://www.linkedin.com/company-beta/24977880/">Linkedin</a></span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a href="">Facebook</a></span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a href="https://www.instagram.com/stem.spirit/">Instagram</a></span>
-        
-        </p>
-      </div>
-    </div>
-  </footer>
   
-  <!--<div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>-->
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you have questions or concerns? Fill out the information below and send it to us. We would love to hear from you!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
 
 <!-- End page content -->
 </div>
+
+<!-- W3.CSS Container -->
+
 
 <script>
 // Script to open and close sidebar
@@ -191,6 +163,7 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
+
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -199,7 +172,6 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 </script>
-
 
 </body>
 </html>
